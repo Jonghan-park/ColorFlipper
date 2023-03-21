@@ -12,7 +12,7 @@ btn.addEventListener("click", function () {
 function getRandomHex() {
   let hexNum = "#";
   for (let i = 0; i < 6; i++) {
-    hexNum += hex[Math.floor(Math.random() * 16)];
+    hexNum += hex[Math.floor(Math.random() * hex.length)];
   }
   return hexNum;
 }
